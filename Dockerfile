@@ -1,7 +1,7 @@
 # Use the official image as a parent image
 FROM centos:latest
 # Maintainer
-MAINTAINER Abraham E Tavarez
+LABEL maintainer="Abraham E Tavarez"
 #Install apache webserver
 RUN yum -y install httpd
 # sets the working directory to webroot
