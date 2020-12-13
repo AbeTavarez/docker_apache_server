@@ -8,7 +8,7 @@ RUN yum -y install httpd
 WORKDIR /var/www/html
 # copy the code to the webroot directory
 COPY html /var/www/html
-# run the command to lauch apache webserver daemon
+# run the command to launch apache webserver daemon in the foreground
 CMD ["/usr/sbin/http", "-D", "FOREGROUND"]
 # expose port 80 for th website
 EXPOSE 80
